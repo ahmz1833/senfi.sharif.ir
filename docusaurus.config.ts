@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'شورای صنفی دانشجویان',
-  tagline: 'دانشگاه صنعتی شریف',
+  tagline: ' در دست ساخت ⏱️',
   favicon: 'img/maini_colors.png',
 
   future: {

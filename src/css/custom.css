@@ -9,6 +9,17 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(22, 51, 124, 0.08); /* آبی خیلی کم‌رنگ */
 }
+.footer {
+  /* رنگ اصلی فوترت (مثلاً مشکی) + گرادیان محو شونده سمت بالا */
+  background: linear-gradient(
+    to top,
+    var(--ifm-color-primary) 70%,      /* پایین - مشکی */
+    transparent 100%  /* بالا شفاف شه */
+  );
+  opacity: 0.7;
+  /* کدهای دیگه که میخوای (مثلاً پدینگ یا ...) */
+}
+
 .ltr-section {
   direction: ltr !important;
   text-align: left !important;
@@ -29,9 +40,17 @@
   height: 100vh;
   pointer-events: none;
   background: url(/img/maini_colors.png) no-repeat center center;
-  background-size: 50vw auto; /* یا هر سایز که دوست داری */
-  opacity: 0.10; /* شفافیت ۱۰ درصد */
+  background-size: 50vw auto;  /* حالت پیش‌فرض برای دسکتاپ */
+  opacity: 0.10;
 }
+
+/* موبایل */
+@media (max-width: 600px) {
+  .home-bg-logo {
+    background-size: 100vw auto; /* تمام عرض گوشی */
+  }
+}
+
 
 /* برای اینکه متن آبی با بک‌گراند آبی نخونه، رنگ بک‌گراند کد مثل قبلی خیلی کمه... */
 

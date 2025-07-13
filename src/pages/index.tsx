@@ -20,8 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://t.me/sharif_senfi">
-            در دست ساخت ⏱️
+            to="/tree">
+            شجره‌نامه
           </Link>
         </div>
       </div>
@@ -32,7 +32,7 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout description="Description will go into a meta tag in <head />">
+    <Layout description="شورای صنفی دانشگاه صنعتی شریف">
       {/* لوگوی بک‌گراند */}
       <div className="home-bg-logo" />
       <HomepageHeader />
