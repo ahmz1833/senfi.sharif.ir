@@ -11,11 +11,7 @@
 }
 .footer {
   /* رنگ اصلی فوترت (مثلاً مشکی) + گرادیان محو شونده سمت بالا */
-  background: linear-gradient(
-    to top,
-    var(--ifm-color-primary) 70%,      /* پایین - مشکی */
-    transparent 100%  /* بالا شفاف شه */
-  );
+  background: var(--ifm-color-primary);
   opacity: 0.7;
   /* کدهای دیگه که میخوای (مثلاً پدینگ یا ...) */
 }
