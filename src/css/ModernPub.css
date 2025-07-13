@@ -1,3 +1,47 @@
+/* نمایش پی‌دی‌اف (پاپ‌آپ) در Desktop */
+.pub-sticky-preview {
+  position: fixed;
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90vw;
+  max-height: 85vh;
+  box-shadow: 0 4px 32px #0002;
+  z-index: 1600;
+  padding: 1.2rem 1rem 1.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+/* 📱 موبایل: */
+@media (max-width: 600px) {
+  .pub-sticky-preview {
+    top: 1.5vh;
+    left: 0;
+    right: 0;
+    max-width: 100vw;
+    width: 98vw;
+    max-height: 94vh;
+    padding: 0.7rem 0.3rem 0.9rem 0.3rem;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px #0003;
+  }
+  .pub-sticky-preview iframe, 
+  .pub-sticky-preview embed {
+    /* فرض بر این که خروجی PDFPreview یک iframe/embed باشه */
+    max-width: 96vw !important;
+    width: 96vw !important;
+    min-height: 56vw;
+    max-height: 72vh;
+  }
+}
+
 .pubs-top-header {
   margin: 0 0 2rem 0;
   padding: 2.2rem 1rem 1.5rem 1rem;
