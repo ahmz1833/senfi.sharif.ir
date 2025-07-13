@@ -1,0 +1,60 @@
+:root {
+  --ifm-color-primary: #16337c;              /* اصلی شورا */
+  --ifm-color-primary-dark: #10225b;         /* دارک‌تر شورای صنفی */
+  --ifm-color-primary-darker: #09153b;       /* دارک‌ترین */
+  --ifm-color-primary-darkest: #050c1d;      /* نزدیک به مشکی، برای کامپوننت‌های خالص دارک */
+  --ifm-color-primary-light: #244bb9;        /* روشن‌تر ( complementary )  */
+  --ifm-color-primary-lighter: #637eda;      /* خیلی روشن */
+  --ifm-color-primary-lightest: #e6ebf7;     /* نزدیک سفید ـ بک‌گراندها، divهای قوی*/
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(22, 51, 124, 0.08); /* آبی خیلی کم‌رنگ */
+}
+.ltr-section {
+  direction: ltr !important;
+  text-align: left !important;
+}
+.opacity-10 {
+  background: linear-gradient(to bottom, 
+    rgba(22,51,124,0.8) 0%,    /* بالا: پررنگ */
+    rgba(22,51,124,0) 100%     /* پایین: محو کامل */
+  );
+}
+
+.home-bg-logo {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: url(/img/maini_colors.png) no-repeat center center;
+  background-size: 50vw auto; /* یا هر سایز که دوست داری */
+  opacity: 0.10; /* شفافیت ۱۰ درصد */
+}
+
+/* برای اینکه متن آبی با بک‌گراند آبی نخونه، رنگ بک‌گراند کد مثل قبلی خیلی کمه... */
+
+[data-theme='dark'] {
+  --ifm-color-primary: #637eda;              /* آبی خیلی روشن لوگو، بهتر دیده می‌شه */
+  --ifm-color-primary-dark: #244bb9;         /* آبی متوسط لوگو */
+  --ifm-color-primary-darker: #16337c;       /* رنگ مرجع لوگو */
+  --ifm-color-primary-darkest: #0e1436;      /* آبی ـ مشکی */
+  --ifm-color-primary-light: #c4cff6;        /* پس‌زمینه ـ روشن‌ترین */
+  --ifm-color-primary-lighter: #e6ebf7;      /* خیلی روشن */
+  --ifm-color-primary-lightest: #f4f7fb;     /* سفید ـ آبی کم‌رنگ مخصوص دارک مود */
+  --docusaurus-highlighted-code-line-bg: rgba(99, 126, 218, 0.19); /* آبی روشن شفاف */
+}
+
+/* فونت هم که درست ست شده */
+@font-face {
+  font-family: 'IranSans';
+  src: url('/fonts/IranianSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, * {
+  font-family: 'IRANYekan', 'IranSans', Vazirmatn, Tahoma, Arial, sans-serif !important;
+}
