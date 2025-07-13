@@ -13,11 +13,15 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://senfi-sharif.ir',
-  baseUrl: '/',
+  // url: 'https://senfi-sharif.ir',
+  // baseUrl: '/',
+  // organizationName: 'aryatrb', // یوزرنیم یا اورگانیزیشن
 
-  organizationName: 'senfi-sharif', // اسم یوزر یا اورگ گیتهاب واقعی رو بذار
-  projectName: 'senfi-sharif.ir',   // اسم repo تو گیتهاب
+  url: 'https://aryatrb.github.io',
+  baseUrl: '/senfi.sharif.ir/',
+  organizationName: 'aryatrb',
+
+  projectName: 'senfi.sharif.ir',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
