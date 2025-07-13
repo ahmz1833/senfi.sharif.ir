@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PDFPreview from '@site/src/components/PDFPreview';
 import '@site/src/css/ModernPub.css'; // اطمینان کن این مسیر درست باشه
+import Head from '@docusaurus/Head';
+
 
 export const magazines = [
   {
@@ -227,15 +229,14 @@ export default function Publications() {
   const toggleManager = idx => setManagerOpen(opened =>
     opened.includes(idx) ? opened.filter(i => i !== idx) : [...opened, idx]
   );
-// مهم: این را بالاتر از Publications در همان فایل قرار بده
 
-function PublicationsHeader() {
-  return (
-    <header className="pubs-top-header" dir="rtl">
-      
-    </header>
-  );
-}
+  function PublicationsHeader() {
+    return (
+      <header className="pubs-top-header" dir="rtl">
+        
+      </header>
+    );
+  }
 
   const toggleEditor = (midx, eidx) => {
     const key = `${midx}-${eidx}`;
@@ -248,6 +249,15 @@ function PublicationsHeader() {
 
   return (
     <>
+    <Head>
+  <title>نشریه شورا | شورای صنفی دانشجویان دانشگاه صنعتی شریف</title>
+  <meta name="description" content="آرشیو نشریات شورای صنفی دانشجویان دانشگاه صنعتی شریف؛ نسخه پی‌دی‌اف همه شماره‌ها و اطلاعات مسئولان نشریه." />
+  <meta property="og:image" content="https://senfi-sharif.ir/img/shora-og.png" />
+  <meta property="og:title" content="نشریه شورای صنفی شریف" />
+  <meta property="og:description" content="آرشیو نشریات شورا، به همراه همه شماره‌ها و لینک دانلود." />
+  <meta property="og:url" content="https://senfi-sharif.ir/publications" />
+</Head>
+
       {currentPdf && (
         <div className="pub-sticky-preview">
           <PDFPreview fileId={currentPdf} />
@@ -310,6 +320,6 @@ function PublicationsHeader() {
           </div>
         )}
       </div>
-</>
+    </>
   );
 }

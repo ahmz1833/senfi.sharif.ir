@@ -41,8 +41,6 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout description="شورای صنفی دانشگاه صنعتی شریف">
-      {/* لوگوی بک‌گراند */}
-      <div className="home-bg-logo" />
       <HomepageHeader />
       <main>
         <HomepageFeatures />

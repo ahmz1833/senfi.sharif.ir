@@ -32,7 +32,7 @@ export function PeriodAccordion({ title, children, defaultOpen = false }) {
         }}
         aria-expanded={open}
       >
-        <span style={{marginLeft:12, display:"inline-block", transition:"transform .3s", transform: open ? "rotate(-90deg)":"rotate(0)"}}>▼</span>
+        <span style={{marginLeft:12, display:"inline-block", transition:"transform .3s", transform: open ? "rotate(0deg)":"rotate(-90deg)"}}>▼</span>
         {title}
       </button>
       {open && (
