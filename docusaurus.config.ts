@@ -122,4 +122,15 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
+module.exports = {
+  //...
+  themeConfig: {
+    //...
+    gtag: {
+      trackingID: 'G-3Y3WE0GLKY', // این آی‌دی خودت
+      anonymizeIP: false, // اختیاری
+    },
+  },
+}
+
 export default config;
