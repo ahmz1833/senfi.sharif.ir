@@ -24,6 +24,14 @@ function HomepageHeader() {
             شجره‌نامه
           </Link>
         </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/publications">
+            آرشیو نشریه شورا
+          </Link>
+        </div>
       </div>
     </header>
   );
