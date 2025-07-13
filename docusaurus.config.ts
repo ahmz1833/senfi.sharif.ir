@@ -71,6 +71,7 @@ const config: Config = {
       },
       items: [
         {to: '/tree', label: 'شجره‌نامه', position: 'left'},
+        {to: '/publications', label: 'نشریه شورا', position: 'left'},
       ],
     },
     footer: {
