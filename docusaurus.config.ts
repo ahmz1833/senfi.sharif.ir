@@ -63,7 +63,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/maini_colors.png',
     navbar: {
       title: 'شورای صنفی دانشجویان دانشگاه صنعتی شریف',
       logo: {
